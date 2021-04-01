@@ -19,9 +19,6 @@ price = INITIAL_PRICE
 print("${:,.2f}".format(price))
 day = DAYS_PASSED
 
-OUTPUT_FILE = "capitalist.txt"
-out_file = open(OUTPUT_FILE,'w')
-
 while price >= MIN_PRICE and price <= MAX_PRICE:
     price_change = 0
     # generate a random integer of 1 or 2
@@ -37,6 +34,5 @@ while price >= MIN_PRICE and price <= MAX_PRICE:
 
     price *= (1 + price_change)
     day += 1
-    print("On day {} price is ${:,.2f}".format(day,price),file=out_file)
+    print("On day {} price is ${:,.2f}".format(day,price))
 
-out_file.close()
