@@ -19,6 +19,8 @@ print(number1 + number2)
 
 in_file = open("numbers.txt", "r")
 total = 0
+### you can use a file containing any number of numbers in place of numbers.txt
+
 for line in in_file:
     number = int(line)
     total += number
