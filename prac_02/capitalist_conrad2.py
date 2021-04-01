@@ -12,11 +12,11 @@ import random
 MAX_INCREASE = 0.175  # 17.5%
 MAX_DECREASE = 0.05  # 5%
 MIN_PRICE = 1.0
-MAX_PRICE = 1000.0
+MAX_PRICE = 100.0
 INITIAL_PRICE = 10.0
 DAYS_PASSED = 0
 price = INITIAL_PRICE
-print("${:,.2f}".format(price))
+print("The starting price is ${:,.2f}".format(price))
 day = DAYS_PASSED
 
 while price >= MIN_PRICE and price <= MAX_PRICE:
