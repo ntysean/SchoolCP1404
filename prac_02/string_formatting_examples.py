@@ -22,3 +22,9 @@ for number in numbers:
 for i, number in enumerate(numbers):
     print("Number {0} is {1:>5}".format(i + 1, number))
 
+
+print("{} {} for about ${:,.0f}!".format(year, name, cost))
+
+
+for number in range(0, 151, 50):
+    print("{:3}".format(number))
