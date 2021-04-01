@@ -32,4 +32,4 @@ while price >= MIN_PRICE and price <= MAX_PRICE:
         price_change = random.uniform(-MAX_DECREASE, 0)
 
     price *= (1 + price_change)
-    print("Price is ${:,.2f}".format(day,price))
+    print("Price is ${:,.2f}".format(price))
