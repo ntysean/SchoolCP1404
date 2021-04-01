@@ -16,11 +16,11 @@ MAX_PRICE = 1000.0
 INITIAL_PRICE = 10.0
 DAYS_PASSED = 0
 price = INITIAL_PRICE
-print("The starting price is ${:,.2f}".format(price))
 day = DAYS_PASSED
 
 OUTPUT_FILE = "capitalist.txt"
 out_file = open(OUTPUT_FILE,'w')
+print("The starting price is ${:,.2f}".format(price))
 
 while price >= MIN_PRICE and price <= MAX_PRICE:
     price_change = 0
