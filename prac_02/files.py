@@ -1,11 +1,11 @@
-OUTPUT_FILE = "names.txt"
+OUTPUT_FILE = "name.txt"
 out_file = open(OUTPUT_FILE,'w')
 name = input("What is your name? : ")
 print(name, file = out_file)
 out_file.close()
 
 
-in_file = open("names.txt", "r")
+in_file = open(OUTPUT_FILE, "r")
 name = in_file.read().strip()
 in_file.close()
 print("Your name is", name)
