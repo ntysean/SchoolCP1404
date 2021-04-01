@@ -16,7 +16,7 @@ MAX_PRICE = 1000.0
 INITIAL_PRICE = 10.0
 DAYS_PASSED = 0
 price = INITIAL_PRICE
-print("${:,.2f}".format(price))
+print("The starting price is ${:,.2f}".format(price))
 day = DAYS_PASSED
 
 OUTPUT_FILE = "capitalist.txt"
