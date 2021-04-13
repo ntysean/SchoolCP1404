@@ -17,9 +17,9 @@ def get_data():
         print(repr(line))  
         line = line.strip()  # Remove the \n
         parts = line.split(',')  # Separate the data into its parts
-        print(parts)  # See what the parts look like (notice the integer is a string)
+     
         parts[2] = int(parts[2]) 
-        print(parts)  # See if that worked
+        print(parts)  # to see if that worked
         data.append(parts)
     input_file.close()
     return data
